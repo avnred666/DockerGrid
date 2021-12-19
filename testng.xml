@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Docker Grid Run" verbose="1" parallel="methods" thread-count="2">
+    <test name="Dropdown Tests">
+        <classes>
+            <class name= "dropdowns.DropdownTests">
+                <methods>
+                    <include name = "testDropdownSelectedOption"/>
+                    <include name = "testDropdownMultiSelect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
